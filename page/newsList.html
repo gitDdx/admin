@@ -11,7 +11,7 @@
 </head>
 <body>
 <div class="posi_box">
-	<span>当前位置：</span><a>保险提现统计表</a>
+	<span>当前位置：</span><a>新闻内容录入</a>
 </div>
 <div class="topd_box clearfix">
 	<div class="sear_box fl">
@@ -19,6 +19,7 @@
 		<input class="s_btn s_btn_search" type="button" value="搜索"/>
 	</div>
 	<div class="oper_box fr">
+		<a class="oper_btn" href="newsAdd.html">新增</a>
 		<a class="oper_btn">导出</a>
 	</div>
 </div>
@@ -28,35 +29,19 @@
 			<thead>
 				<tr>
 					<th>日期</th>
-					<th>姓名</th>
-					<th>手机</th>
-					<th>提现积分</th>
-					<th>打款金额</th>
-					<th>银行</th>
-					<th>卡号</th>
-					<th>开户支行</th>
-					<th>打款状态</th>
+					<th>标题</th>
+					<th>内容</th>
+					<th class="tbl_oper">操作</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>2018-05-27</td>
-					<td>张某某</td>
-					<td>13412366321</td>
-					<td>100</td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td>已打款</td>
+					<td>成都市今日....</td>
+					<td>XXXXXXXXX</td>
+					<td class="tbl_oper"><span class="oper_span"><a href="newsEdit.html">编辑</a><a>发布</a></span></td>
 				</tr>
 			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="3">总计</td>
-					<td>100</td>
-				</tr>
-			</tfoot>
         </table>
 		<div class="page_wrap clearfix">
 			<div class="pages fr" id="pageDiv">
@@ -82,12 +67,5 @@
 	</div>
 </div>
 <script src="../js/jquery-1.8.3.min.js"></script>
-<script src="../laydate/laydate.js"></script>
-<script>
-    /* 日历 */
-    laydate({
-        elem: '#time'
-    });
-</script>
 </body>
 </html>

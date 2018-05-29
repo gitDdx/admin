@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../css/globle.css">
 <style>
 	html,body{ width:100%; height:100%;}
+	.getCode{padding-top: 10px;}
 </style>
 </head>
 <body class="login_bg">
@@ -20,8 +21,11 @@
 	</div>
 	<form action="index.html">
 		<ul class="login_ul">
-			<li><input class="user" type="text" placeholder="请输入用户名"/></li>
+			<li><input class="user" type="text" placeholder="请输入用户名"/>
+				<a class="fr getCode" href="javascript:;">获取验证码</a>
+			</li>
 			<li><input class="pwd" type="password" placeholder="请输入登录密码"/></li>
+			<li><input class="yzm" type="text" placeholder="请输入手机验证码"/></li>
 			<li class="btn"><input type="submit" value="立即登录"/></li>
 		</ul>
 	</form>

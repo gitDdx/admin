@@ -17,6 +17,10 @@
 	<span>当前位置：</span><a>服务费月度账单管理记录</a>
 </div>
 <div class="topd_box clearfix">
+	<div class="sear_box fl">
+		<input class="s_input input-icon input-icon-m" style="display: inline-block;width:200px;" type="text" id="time" placeholder="请选择时间" value="">
+		<input class="s_btn s_btn_search" type="button" value="搜索"/>
+	</div>
 	<div class="oper_box fr">
 		<a class="oper_btn">导出</a>
 	</div>
@@ -57,7 +61,8 @@
 <script>
     /* 日历 */
     laydate({
-        elem: '#time'
+        elem: '#time',
+        format: 'YYYY-MM'
     });
 </script>
 </body>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!--优先使用 IE 最新版本和 Chrome-->
+<meta name="renderer" content="webkit">
+<meta name="author" content="">
+<title>后台管理系统</title>
+<link rel="stylesheet" type="text/css" href="../css/globle.css">
+</head>
+<body>
+<div class="posi_box">
+	<span>当前位置：</span><a>新闻内容录入</a> - <a>编辑</a>
+</div>
+<div class="wrap_con">
+<div id="test">
+	<div class="bg_white" >
+		<div class="tbl_box" >
+			<table class="tbl_form" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td id="info1" class="tbl_name " colspan="2"><span>新闻信息</span></td>
+				</tr>
+				<tr>
+					<td class="tbl_tit"><b class="mark">*</b><span>标题：</span></td>
+					<td><input class="s_input s_input_fb" type="text" placeholder="请输入标题"/></td>
+				</tr>
+				<tr>
+					<td class="tbl_tit"><b class="mark">*</b><span>时间：</span></td>
+					<td>
+						<input class="s_input input-icon input-icon-m" type="text" id="time" placeholder="请选择发布时间" value="">
+					</td>
+				</tr>
+				<tr>
+					<td class="tbl_tit"><b class="mark">*</b><span>内容：</span></td>
+					<td><input class="s_input s_input_fb" type="text" placeholder="请输入内容"/></td>
+				</tr>
+				<tr>
+					<td class="tbl_tit"></td>
+					<td style="text-align: center">
+						<input class="fom_btn" type="button" value="保存"/>
+					</td>
+				</tr>
+			</table>
+		</div>
+    </div>
+</div>
+</div>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../laydate/laydate.js"></script>
+<script>
+    /* 日历 */
+    laydate({
+        elem: '#time'
+    });
+</script>
+</body>
+</html>
