@@ -33,7 +33,9 @@
 				</tr>
 				<tr>
 					<td class="tbl_tit"><b class="mark">*</b><span>内容：</span></td>
-					<td><input class="s_input s_input_fb" type="text" placeholder="请输入内容"/></td>
+					<td>
+						<textarea id="kindEditor" style="width:100%;min-height:300px;"></textarea>
+					</td>
 				</tr>
 				<tr>
 					<td class="tbl_tit"></td>
@@ -48,10 +50,18 @@
 </div>
 <script src="../js/jquery-1.8.3.min.js"></script>
 <script src="../laydate/laydate.js"></script>
+<script charset="utf-8" src="../kindeditor/kindeditor-all-min.js"></script>
+<script charset="utf-8" src="../kindeditor/lang/zh-CN.js"></script>
 <script>
     /* 日历 */
     laydate({
         elem: '#time'
+    });
+    /* 編輯器 */
+    var editor;
+    KindEditor.ready(function(K) {
+        editor = K.create('#kindEditor', {
+        });
     });
 </script>
 </body>
